@@ -10,9 +10,20 @@ This project is for a business solution for Lux, an imaginary consumer electroni
 
 **Data Sources** : OpenWeatherMap ("https://openweathermap.org/")
 
-**Web-Scraping methods**:
-- Step 1: Autonomous login and Configure "Selenium WebDriver" for dynamic content loading to save HTML pages
+**Web-Scraping Workflow**:
+
+**Step 1: Autonomous Browser Interaction**
+
+- Utilize "Selenium WebDriver" to programmatically control a web browser, enabling the team to log into websites requiring authentication and interact with web pages that load content dynamically.
+- Automate the process of saving HTML pages for offline analysis and data extraction.
   
-- Step 2: Set up "BeautifulSoup" for HTML content parsing. Useful for extracting specific information from static web pages.
+**Step 2: HTML Content Parsing**
+
+- Implement "BeautifulSoup" for parsing and navigating the HTML content of web pages.
+- Extract pertinent weather data, such as temperature, precipitation, wind speed, and weather conditions, from static web page elements.
   
-- Step 3: Identify and register for APIs providing real-time and historical weather data, and store scraped data in a preliminary format for further processing (use MongoDB,JSON)
+**Step 3: API Integration and Data Storage**
+
+- Identify and register for weather data APIs that provide both real-time and historical data sets.
+- Systematically scrape weather data and structure it in a preliminary format, such as JSON.
+- Employ MongoDB, a NoSQL database, to store and manage the scraped weather data efficiently.
